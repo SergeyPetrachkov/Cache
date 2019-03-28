@@ -20,8 +20,9 @@ struct TestHelper {
     NotificationCenter.default.post(name: Notification.Name.UIApplicationDidEnterBackground, object: nil)
     NotificationCenter.default.post(name: Notification.Name.UIApplicationWillTerminate, object: nil)
     #else
-      NotificationCenter.default.post(name: NSApplication.willTerminateNotification, object: nil)
-      NotificationCenter.default.post(name: NSApplication.didResignActiveNotification, object: nil)
+    
+//      NotificationCenter.default.post(name: NSApplication.willTerminateNotification, object: nil)
+//      NotificationCenter.default.post(name: NSApplication.didResignActiveNotification, object: nil)
     #endif
   }
 }
